@@ -380,3 +380,120 @@
         font-size:medium;
     }
 }
+
+.footer{
+    width:100%;
+}
+
+.footer_section1{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width:80%;
+        margin:auto;
+}
+
+.footer_section1 img{
+    width:130px;
+}
+
+.section1_buttonContainer{
+    display: flex;
+    gap: 1rem;
+}
+
+.section1_buttonContainer button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.navigation_container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(5, 1fr);
+    width:80%;
+    margin: auto;
+    /* gap is only possible with flex or grid */
+    gap: 1rem;
+    padding: 3rem 0; 
+}
+
+.linK_container{
+    display:flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.linK_container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer_link{
+    text-decoration: none;
+    color: gray;
+    font-size:13px;
+    font-weight: 300;
+}
+
+.footer_link::hover{
+    color:black;
+}
+
+.social_links_container button{
+    color:white;
+    height:25px;
+    width:25px;
+    border-radius: 50%;
+    background-color: black;
+    cursor: pointer;
+    border: none;
+}
+
+.social_links_container button i{
+
+    font-size:13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_section_logo{
+    width: 100%;
+}
+
+.disclaimer{
+    width: 95%;
+    margin:auto;
+    color: gray;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .navigation_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .navigation_container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
