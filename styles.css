@@ -246,3 +246,137 @@
     font-weight:400;
     letter-spacing: 0.5px;
 }
+
+.get_app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;  
+}
+
+.get_app .semiContainer{
+    width: 60%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.get_app .semiContainer .left{
+    /* total columns = 12 */
+    /* left is taking 2 flex columns */
+    flex: 2;
+}
+
+.get_app .semiContainer .left img{
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.get_app .semiContainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.get_app .semiContainer .right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.get_app .semiContainer .right p{
+    font-size: 0.8rem;
+}   
+
+.get_app .semiContainer .right .radio_buttons_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.get_app .semiContainer .right .radio_buttons_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.get_app .semiContainer .right .radio_buttons_container div input{
+    height: 15px;
+    width: 15px;
+    /* change the color of radio button to reddish color */
+    accent-color: rgb(239, 29,95);
+}
+
+.get_app .semiContainer .right .input_container{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.get_app .semiContainer .right .input_container input{
+    padding: 10px 12px;   
+}
+
+.input_container input{
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input_container button{
+    border: none;
+    background-color: rgb(239, 79, 95);
+    padding: 5px;
+    color:white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right .download_app_container{
+    display:flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.download_app_container h5{
+    font-weight: 400;
+    color: gray;
+}
+
+.download_app_container div{
+    display: flex;
+    gap: 1rem;
+}
+
+.download_app_container div img{
+    width: 35%;
+}
+
+@media only screen and (max-width: 1100px){
+    .get_app .semiContainer .left,
+    .get_app .semiContainer .right{
+        flex:1;
+    }
+    .get_app .semiContainer{
+        width:80%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .get_app{
+        padding: 2rem;
+    }
+    .get_app .semiContainer{
+        width:90%;
+        flex-direction: column;
+    }
+    .get_app .semiContainer .right h1{
+        font-size:medium;
+    }
+}
